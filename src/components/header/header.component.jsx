@@ -41,7 +41,5 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps)(Header);
-// _______________________________________________________________conflict______________________________________________________________________
 
 // //connect is a higher order funcrion and takes 2 arguments, 2nd being optional. 1st arg is a Function that allows us to access state
-// export default connect(mapStateToProps)(Header);
