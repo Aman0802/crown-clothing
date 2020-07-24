@@ -16,6 +16,8 @@ const config = {
   measurementId: "G-T0TBZ7833X",
 };
 
+firebase.initializeApp(config);
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   //save in db only when we are signing in and not when we are signing out!
   if (!userAuth) return;
@@ -43,8 +45,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
   return userRef;
 };
-
-firebase.initializeApp(config);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
