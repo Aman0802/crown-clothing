@@ -1,10 +1,11 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const OptionContainerStyles = css`
-  padding: 10px 15px;
-  cursor: pointer;
-`;
+// alternative to just changing the html tag is using the as attribute in html
+// export const OptionContainerStyles = css`
+//   padding: 10px 15px;
+//   cursor: pointer;
+// `;
 
 export const HeaderContainer = styled.div`
   height: 70px;
@@ -29,9 +30,10 @@ export const OptionsContainer = styled.div`
 `;
 
 export const OptionLink = styled(Link)`
-  ${OptionContainerStyles}
+  padding: 10px 15px;
+  cursor: pointer;
 `;
 
-export const OptionDiv = styled.div`
-  ${OptionContainerStyles}
-`;
+// export const OptionDiv = styled.div`
+//   ${OptionContainerStyles}
+// `;
