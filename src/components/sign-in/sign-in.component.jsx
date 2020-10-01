@@ -7,7 +7,7 @@ import CustomButton from "../custom-button/custom-button.component";
 import "../../firebase/firebase.utils";
 
 import "./sign-in.styles.scss";
-import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
+// import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 
 import { googleSignInStart } from "../../redux/user/user.actions";
 

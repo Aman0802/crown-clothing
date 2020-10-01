@@ -13,11 +13,11 @@ import Header from "./components/header/header.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 
 import { setCurrentUser } from "./redux/user/user.actions";
-import {
-  auth,
-  createUserProfileDocument,
-  // addCollectionAndDocuments,
-} from "./firebase/firebase.utils";
+// import {
+//   auth,
+//   createUserProfileDocument,
+//   // addCollectionAndDocuments,
+// } from "./firebase/firebase.utils";
 
 import { selectCurrentUser } from "./redux/user/user.selectors";
 // import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
