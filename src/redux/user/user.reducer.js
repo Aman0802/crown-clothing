@@ -5,6 +5,12 @@ const INITIAL_STATE = {
     error: null
 }
 
+/**
+ * Reducer function for managing user state in a Redux store.
+ * @param {Object} state - The current state of the user slice. Defaults to INITIAL_STATE if not provided.
+ * @param {Object} action - The action object containing type and payload.
+ * @returns {Object} The new state after applying the action.
+ */
 const userReducer = (state=INITIAL_STATE, action) => {
     switch(action.type) {
         case userActionTypes.GOOGLE_SIGN_IN_SUCCESS:
