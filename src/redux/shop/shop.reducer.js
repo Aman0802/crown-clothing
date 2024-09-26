@@ -6,6 +6,12 @@ const INITIAL_STATE = {
   errorMessage: undefined,
 };
 
+/**
+ * Reducer function for managing shop-related state in a Redux store
+ * @param {Object} state - The current state of the shop (default: INITIAL_STATE)
+ * @param {Object} action - The action object containing type and payload
+ * @returns {Object} The new state after applying the action
+ */
 const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ShopActionTypes.FETCH_COLLECTIONS_START:

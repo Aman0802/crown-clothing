@@ -27,6 +27,12 @@ export function* fetchCollectionsAsync() {
   }
 }
 
+/**
+ * Generator function that initiates the process of fetching collections.
+ * It uses Redux-Saga's takeLatest effect to handle the latest FETCH_COLLECTIONS_START action.
+ * @yields {Object} A Redux-Saga effect, specifically takeLatest.
+ * @returns {void}
+ */
 export function* fetchCollectionsStart() {
   yield takeLatest(
     ShopActionTypes.FETCH_COLLECTIONS_START,
