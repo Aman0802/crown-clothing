@@ -35,6 +35,12 @@ const INITIAL_STATE = {
   ],
 };
 
+/**
+ * Reducer function for managing directory state
+ * @param {Object} state - The current state of the directory (default: INITIAL_STATE)
+ * @param {Object} action - The action object containing the type and payload
+ * @returns {Object} The new state after applying the action
+ */
 const directoryReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     default:
